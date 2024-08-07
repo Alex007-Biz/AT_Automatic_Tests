@@ -1,5 +1,5 @@
 import unittest
-from main3 import divide
+from AT01.main3 import divide
 
 class TestDivide(unittest.TestCase):
     def test_divide_success(self):

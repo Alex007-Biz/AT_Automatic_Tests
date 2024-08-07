@@ -1,5 +1,5 @@
 import unittest
-from main2 import check
+from AT01.main2 import check
 
 class TestCheck(unittest.TestCase):
     def test_check(self):
