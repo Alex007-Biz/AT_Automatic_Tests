@@ -17,3 +17,7 @@ def add_user(conn, name, age):
     INSERT INTO users (name, age) VALUES (?, ?)''', (name, age))
     conn.commit()
 
+def get_user(conn, name):
+    cursor = conn.cursor()
+    cursor.execute('''SELECT * FROM users WHERE name=?''', (name,))
+    return cursor.fetchone()
